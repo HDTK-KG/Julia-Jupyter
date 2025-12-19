@@ -1,0 +1,18 @@
+{
+  "name": "Julia Data Science (Jupyter Stack)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "julialang.language-julia", // Julia 本体のサポート
+        "ms-toolsai.jupyter",       // Jupyter Notebook サポート
+        "ms-python.python"          // Pythonサポート（ベースイメージに含まれるため便利）
+      ],
+      "settings": {
+        "julia.executablePath": "/opt/julia/bin/julia"
+      }
+    }
+  }
+}
